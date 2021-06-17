@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_backgroundgame"
+    tools:context=".SinglePlayer">
+
+    <ImageView
+        android:id="@+id/player1ico"
+        android:layout_width="74dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        app:srcCompat="@drawable/ic_smile" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/aclonica"
+        android:layout_toStartOf="@+id/player2ico"
+        android:gravity="center_horizontal"
+        android:text="@string/vs"
+        android:textSize="50sp"
+        android:textColor="#FF9800"
+        android:layout_toEndOf="@+id/player1ico"
+        />
+
+    <ImageView
+        android:id="@+id/player2ico"
+        android:layout_width="74dp"
+        android:layout_height="73dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        app:srcCompat="@drawable/ic_really" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:id="@+id/splayer"
+        android:textColor="#185F97"
+        android:layout_marginStart="20dp"
+        android:textSize="22sp"
+        android:fontFamily="@font/aclonica"
+        android:layout_below="@+id/player1ico"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:text="Computer"
+        android:textSize="22sp"
+        android:fontFamily="@font/aclonica"
+        android:textColor="#A52323"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/player2ico"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:background="@drawable/ic_back">
+
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="29dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/a11"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:adjustViewBounds="true"
+                android:background="#00000000"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/a12"
+                android:layout_width="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_height="60dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:background="#00000000" />
+
+            <ImageButton
+                android:id="@+id/a13"
+                android:layout_width="60dp"
+                android:layout_marginStart="28dp"
+                android:layout_height="60dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:background="#00000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="-10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/a21"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:adjustViewBounds="true"
+                android:background="#00000000"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/a22"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:adjustViewBounds="true"
+                android:background="#00000000"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/a23"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="28dp"
+                android:adjustViewBounds="true"
+                android:background="#00000000"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/a31"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:adjustViewBounds="true"
+                android:background="#00000000"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/a32"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="32dp"
+                android:adjustViewBounds="true"
+                android:background="#00000000"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/a33"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="28dp"
+                android:adjustViewBounds="true"
+                android:background="#00000000"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/singleadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        />
+</RelativeLayout>

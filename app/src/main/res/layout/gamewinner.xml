@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/ic_dialogback">
+
+    <TextView
+        android:id="@+id/win"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="#fec600"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:text="Wins"
+        android:fontFamily="@font/aclonica"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Play Again"
+            style="?android:attr/buttonBarButtonStyle"
+            android:id="@+id/pa"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/alegreya_sans_sc_bold"
+            android:textColor="#fff"
+            android:background="#3799fe"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Main Menu"
+            android:fontFamily="@font/alegreya_sans_sc_bold"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_margin="10dp"
+            android:id="@+id/mm"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:background="#f89b9b"/>
+    </LinearLayout>
+
+</LinearLayout>

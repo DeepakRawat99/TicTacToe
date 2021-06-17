@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/backlay"
+    tools:context="rawatapps.tictactoe.devicelist"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20sp">
+
+        <Button
+            android:id="@+id/openwifi"
+            style="?buttonBarButtonStyle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="start"
+            android:background="@drawable/wifired"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/usersearch"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="openWifi"/>
+
+        <Button
+            android:id="@+id/usersearch"
+            style="?buttonBarButtonStyle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:background="@drawable/finduser"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/openwifi"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="searchPlayer"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/list"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:background="@drawable/ic_textviewback"
+        android:layout_marginTop="20sp"
+        android:fontFamily="@font/amaranth_bold"
+        android:textColor="#DAA811"/>
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20sp"
+    android:id="@+id/recycler">
+
+</androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>
